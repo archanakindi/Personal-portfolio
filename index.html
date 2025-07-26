@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Archana Kindigeri | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="landing">
+    <h1 class="floating-title" onclick="showSection('about')">About Me</h1>
+    <h1 class="floating-title" onclick="showSection('projects')">Projects</h1>
+    <h1 class="floating-title" onclick="showSection('internships')">Internships</h1>
+    <h1 class="floating-title" onclick="showSection('skills')">Skills</h1>
+    <h1 class="floating-title" onclick="showSection('certifications')">Certifications</h1>
+    <h1 class="floating-title" onclick="showSection('education')">Education</h1>
+    <h1 class="floating-title" onclick="showSection('contact')">Contact</h1>
+  </div>
+
+  <div id="about" class="hidden-section section">
+    <h2>About Me</h2>
+    <p>Hello, I’m <strong>Kindigeri Archana</strong>, a B.Tech student in Artificial Intelligence and Data Science at <strong>Vardhaman College of Engineering</strong>. I'm passionate about front-end development and building intelligent systems that merge design with AI for real-world impact.</p>
+  </div>
+
+  <div id="projects" class="hidden-section section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Connect-In (Community Skills Exchange):</strong> A web platform to connect community members for skill exchange. Technologies: Python, HTML, CSS.</li>
+      <li><strong>Advanced Spectacles:</strong> Smart glasses reducing glare and enhancing night vision. Technologies: C++, Python, MATLAB, VHDL, AR.</li>
+      <li><strong>Smart City Real-Time Analytics Pipeline:</strong> Live sensor data processing using Power BI, Tableau, AWS (S3, Redshift, Glue, Athena).</li>
+    </ul>
+  </div>
+
+  <div id="internships" class="hidden-section section">
+    <h2>Internships</h2>
+    <ul>
+      <li><strong>Frontend Development (June–Sept 2024):</strong> Built web UIs using HTML & CSS, practiced responsive design, and UI/UX basics.</li>
+      <li><strong>AWS Cloud Intern:</strong> Hands-on with AWS infrastructure, architecture design, cost optimization, CLI tools, and Well-Architected Framework.</li>
+      <li><strong>ML Intern – Codetech Company:</strong> Implemented ML algorithms, model training, data preprocessing using real-world datasets.</li>
+    </ul>
+  </div>
+
+  <div id="skills" class="hidden-section section">
+    <h2>Technical & Soft Skills</h2>
+    <p><strong>Languages:</strong> Python, C/C++, JavaScript, HTML, CSS</p>
+    <p><strong>Libraries/Frameworks:</strong> ReactJs, STL, Python Libraries</p>
+    <p><strong>Cloud/DB:</strong> MongoDB, Firebase, MySQL, AWS</p>
+    <p><strong>Tools:</strong> Node.js, VS Code, Git, GitHub</p>
+    <p><strong>Coursework:</strong> DSA, OOPs, OS, DBMS, SE</p>
+    <p><strong>Soft Skills:</strong> Communication, Teamwork, Time Management, Problem Solving, Adaptability</p>
+  </div>
+
+  <div id="certifications" class="hidden-section section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>C++ – Great Learning (Jan 2024)</li>
+      <li>NLP – Great Learning (Oct 2024)</li>
+      <li>NIELIT Certification (Aug 2024)</li>
+      <li>Bootcamp – Vardhaman College (Mar 2025)</li>
+      <li>Internship Certificate – Codetech (ML domain)</li>
+      <li>Essay Winner – POWERGRID (Wisdom & Liberty)</li>
+    </ul>
+  </div>
+
+  <div id="education" class="hidden-section section">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech – AI & DS, Vardhaman College of Engineering (2022–26)</strong><br>CGPA: 7.75</li>
+      <li><strong>Intermediate (MPC), TSRJC (2020–22)</strong><br>CGPA: 9.2</li>
+      <li><strong>10th – BSET (2020)</strong><br>CGPA: 10.0</li>
+    </ul>
+  </div>
+
+  <div id="contact" class="hidden-section section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:archanakindigeri923@gmail.com">archanakindigeri923@gmail.com</a></p>
+    <p>Phone: +91-9014108155</p>
+    <p>GitHub: <a href="https://github.com/archanakindi" target="_blank">archanakindi</a></p>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelector('.landing').style.display = 'none';
+      document.querySelectorAll('.hidden-section').forEach(s => s.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
